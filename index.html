@@ -8,21 +8,28 @@
     <title>To-Do List</title>
 </head>
 <body>
-    <div class="container d-flex justify-content-center mt-5">
+    <div class="container d-flex justify-content-center mt-5 text-center">
     <div class="card text-white bg-info mb-3" style="width: 35rem;">
-        <div class="card-header"><h5 class="card-title">Insert Tasks</h5></div>
+        <div class="card-header"><h1 class="card-title">TO-DO-LIST</h1></div>
         <div class="card-body">
           <p class="card-text">
-          <form id="taskform" method="POST">
-              <p>Enter your tasks</p>
-              <input name="tasks" class="task" type="text" placeholder="Enter task">
-              <button type="submit">Check</button>
+          <form id="taskform" class="mb-5" method="POST">
+              <h5 class="text-left pl-5 ml-5">Enter your tasks: </h5>
+              <input name="tasks" class="task ml-2" style="width:17rem; border-radius: 5px; height: 6vh; font-size: large;" type="text" placeholder="Enter task"/>
+              <button type="submit" class="btn-primary" style="border-radius: 5px;"><h5>Check</h5></button>
             </form>
+            <hr style="width: 23vw; border-top: 2px solid #4d004d">
+            <hr style="width: 25vw; border-top: 3px dashed #ffffcc; margin-top: -13px;">
+            <hr style="width: 23vw; border-top: 2px solid #4d004d; margin-top: -13px;">
         </p>
-        <table class="table table-sm" >
+        <table class="table mt-5" >
             <thead>
               <tr>
-                <th>Tasks Appears Here</th>
+                <th><h5 style="margin-bottom:-4px; margin-top:-4px;">
+                      <img src="https://fontmeme.com/permalink/210421/f6200140eb7b1d9e923a03228603e004.png" alt="calligraphy-fonts" border="0">
+                    </h5>
+                      <img src="https://fontmeme.com/permalink/210421/6240c037fa462571a793a95b0dc46db0.png" alt="baybayin-doctrina-font" border="0">
+                </th>
               </tr>
             </thead>
             <tbody id="data">
@@ -37,4 +44,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./interactions.js"></script>
 </body>
+<style>
+  body{
+
+  }
+</style>
 </html>

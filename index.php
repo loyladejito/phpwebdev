@@ -15,3 +15,13 @@ while (!feof($datahandler)){
 }
 fclose($datahandler);
 print_r (json_encode(array("tasks" => $taskarray)));
+
+$read = file_get_contents($datahandler);
+$lines = explode("\n", $read);//get
+// foreach($lines as $key => $value){
+//     $code[] =  $value[0];
+//     $name[] = $value[1];
+//     $cost[] = $value[2];
+//     $selling_price[] = $value[3];
+//   }
+print_r($lines);
